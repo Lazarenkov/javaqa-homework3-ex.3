@@ -1,11 +1,12 @@
 public class CreditPaymentService {
 
-    public double calcPayment(double value, double rate, double time){
-        double payment;
+    public int calcPayment(int value, double rate, int time){
+        int payment;
         double m = rate/12/100;
-        double n = time*12;
+        int n = time*12;
         double k=(m*Math.pow(1+m,n))/(Math.pow(1+m,n)-1);
-        payment=k*value;
+        double paymentdouble=k*value;
+        payment=(int) paymentdouble;
 
         return payment;
     }
