@@ -1,7 +1,7 @@
 public class Main {
 
     public static void main(String[] args) {
-        CreditPaymentService service=new CreditPaymentService();
+        CreditPaymentService service = new CreditPaymentService();
 
         System.out.println("Сумма кредита = 1 000 000 руб.");
         System.out.println("Ставка = 9,99%");
@@ -19,7 +19,6 @@ public class Main {
         System.out.println("Ставка = 9,99%");
         System.out.println("Срок = 3 года");
         System.out.println("Размер ежемесячного платежа = " + service.calcPayment(1000000, 9.99, 3) + " руб.");
-
 
 
     }
